@@ -1,5 +1,11 @@
+function normalizeApiUrl(raw?: string): string {
+  if (!raw) return "http://localhost:8000";
+  if (raw.startsWith("http://") || raw.startsWith("https://")) return raw;
+  return `https://${raw}`;
+}
+
 export const env = {
-  apiUrl: process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000",
+  apiUrl: normalizeApiUrl(process.env.NEXT_PUBLIC_API_URL),
   useMocks: process.env.NEXT_PUBLIC_USE_MOCKS === "true",
   basemapStyleUrl:
     process.env.NEXT_PUBLIC_BASEMAP_STYLE_URL ||
