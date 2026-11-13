@@ -76,3 +76,7 @@ Thumbs.db
 .ipynb_checkpoints/
 *-checkpoint.ipynb
 
+# Local agent instructions & planning docs
+/AGENTS.md
+/docs/
+
