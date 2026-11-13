@@ -78,5 +78,8 @@ Thumbs.db
 
 # Local agent instructions & planning docs
 /AGENTS.md
-/docs/
+/docs/*
+!/docs/CLAIMS_AUDIT.md
+!/docs/SUBMISSION_DRAFT.md
+!/docs/SUBMISSION_LOG.md
 
