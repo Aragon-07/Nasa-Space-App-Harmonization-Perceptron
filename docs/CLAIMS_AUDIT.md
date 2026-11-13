@@ -35,3 +35,4 @@ Every quantitative claim made in the PyroScope UI, README, pitch deck, and submi
 | Top 5 highest CHT years (`2001–2025`) | `2006` (#1, `738.00`), `2009` (#2, `700.00`), `2014` (#3, `625.65`), `2008` (#4, `623.00`), `2007` (#5, `616.00`) | `2006` recorded `+59.0%` vs baseline and `336,856.2 MW` FRP; `2001–2002` lowest due to Terra-only epoch | `docs/DATA_FINDINGS.md` (§11) |
 | Anomaly counts across 74 regions | `23,088` region-months: `21,884` normal, `333` elevated, `871` extreme | Complete baseline years `2001–2025` (`p50`, `p90`, `p95` linear percentiles) | `docs/DATA_FINDINGS.md` (§11) |
 | Emergency response & stations | FSCD hotlines `102` and `999` | Verified against Bangladesh Fire Service & Civil Defence; POI stations from HOTOSM (`ODbL 1.0`) | `data/reference/SOURCES.md` (§4) |
+
