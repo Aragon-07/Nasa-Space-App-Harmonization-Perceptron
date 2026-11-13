@@ -80,6 +80,7 @@ Thumbs.db
 /AGENTS.md
 /docs/*
 !/docs/CLAIMS_AUDIT.md
+!/docs/DEMO_SCRIPT.md
 !/docs/SUBMISSION_DRAFT.md
 !/docs/SUBMISSION_LOG.md
 
