@@ -17,6 +17,7 @@ COPY services/api /workspace/services/api
 COPY contracts /workspace/contracts
 COPY data/fixtures /workspace/data/fixtures
 COPY data/reference /workspace/data/reference
+COPY data/processed /workspace/data/processed
 
 WORKDIR /workspace/services/api
 
@@ -25,7 +26,7 @@ RUN uv pip install --system -e /workspace/pipeline -e /workspace/services/api
 
 # Default environment configuration
 ENV PYTHONUNBUFFERED=1 \
-    DATA_DIR=/workspace/data/fixtures \
+    DATA_DIR=/workspace/data/processed/current \
     REFERENCE_DIR=/workspace/data/reference \
     WEB_ORIGIN=http://localhost:3000 \
     LLM_PROVIDER=replay \
