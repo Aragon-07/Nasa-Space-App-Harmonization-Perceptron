@@ -3,8 +3,9 @@
 > **NASA Space Apps Challenge 2026** — *Harmonization of MODIS and VIIRS Hot Spots*  
 > **Team:** Perceptron  
 > **Repository:** https://github.com/azmaeenmahtab/Nasa-Space-App-Harmonization-Perceptron  
-> **Demo Video (240s):** https://youtu.be/O7Fo4-lNndQ?si=PZ3GMXMkyO8Hx_7Q  
-> **Live Demo:** *Deployment URL pending (Render + Vercel; see [Production Deployment](#production-deployment--data-shipping))*
+> **Live Demo:** https://nasa-space-app-harmonization-percep.vercel.app/ *(Interactive pitch walkthrough: [?demo=1](https://nasa-space-app-harmonization-percep.vercel.app/?demo=1))*  
+> **30s Global Demo Video:** https://youtu.be/je6PrhJea90?si=HG-OxZJyug_-QG_K  
+> **240s Full Demo Video:** https://youtu.be/O7Fo4-lNndQ?si=R6r0HaAsskfusfGY
 
 PyroScope harmonizes NASA MODIS (1 km, 2000–present) and VIIRS S-NPP (375 m, 2012–present) active-fire records into one consistent 2000–present **Burning Activity Calendar** (`FireCalendar`) for early warning, wildland management, scientists, and emergency response across Bangladesh and the Chittagong Hill Tracts (CHT).
 
@@ -153,7 +154,7 @@ The root [render.yaml](render.yaml) defines both `pyroscope-api` (`services/api/
 
 ### 2. Split Deployment (Vercel Web + Render/Fly/Cloud Run API)
 - **Web (`apps/web`):** Root directory `apps/web`, build command `pnpm build`, output `.next`. Set `NEXT_PUBLIC_API_URL` (HTTPS URL of API) and `NEXT_PUBLIC_BASEMAP_STYLE_URL=https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json`.
-- **API (`services/api/Dockerfile`):** Build context `.` (repo root). Set `DATA_DIR=/workspace/data/processed/current`, `REFERENCE_DIR=/workspace/data/reference`, `WEB_ORIGIN=<frontend-url>`, `LLM_PROVIDER=replay` (or `gemini` with `GEMINI_API_KEY`).
+- **API (`services/api/Dockerfile`):** Build context `.` (repo root). Set `DATA_DIR=/workspace/data/processed/current`, `REFERENCE_DIR=/workspace/data/reference`, `WEB_ORIGIN=https://nasa-space-app-harmonization-percep.vercel.app`, `LLM_PROVIDER=replay` (or `gemini` with `GEMINI_API_KEY`).
 
 ### 3. Data Rollback Procedure
 1. Retain the previous processed version directory (e.g., `data/processed/v2026-10-31-f4296770/`).

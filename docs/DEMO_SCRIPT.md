@@ -1,7 +1,8 @@
 # PyroScope 240-Second Demo Script & Offline Fallback (`X02`)
 
 **Total Duration:** 240 seconds (4:00)  
-**Primary URL:** `/?demo=1` (auto-selects `PRESET-CHT` and opens the 4-step Pitch Guide)  
+**Live App URL:** https://nasa-space-app-harmonization-percep.vercel.app/?demo=1 *(auto-selects `PRESET-CHT` and opens the 4-step Pitch Guide)*  
+**30s Global Judging Video:** https://youtu.be/je6PrhJea90?si=HG-OxZJyug_-QG_K  
 **Numbers Reference:** Every figure below matches `docs/CLAIMS_AUDIT.md` and `data/processed/current/manifest.json` (`v2026-10-31-f4296770`).
 
 ---
@@ -26,5 +27,5 @@
 | **WiFi / Cloud API Down** | Switch to the pre-started local `docker compose up --build` (or local `uvicorn` + `pnpm dev`) instance on `http://localhost:3000/?demo=1`. |
 | **Gemini API Key / Quota Fails** | Keep `LLM_PROVIDER=replay` active; state explicitly during the demo that Ask PyroScope is running in deterministic `replay` mode using verified Parquet outputs. |
 | **CARTO Basemap Tiles Blocked** | Deck.gl H3 hexagons and geoBoundaries district polygons continue rendering normally over the dark canvas even without external map tiles. |
-| **Live App Completely Unavailable** | Play the 240s backup recording (`https://youtu.be/O7Fo4-lNndQ?si=PZ3GMXMkyO8Hx_7Q`) and walk through `docs/CLAIMS_AUDIT.md`. |
+| **Live App Completely Unavailable** | Play the 240s backup recording (`https://youtu.be/O7Fo4-lNndQ?si=R6r0HaAsskfusfGY`) or 30s pitch (`https://youtu.be/je6PrhJea90?si=HG-OxZJyug_-QG_K`) and walk through `docs/CLAIMS_AUDIT.md`. |
 

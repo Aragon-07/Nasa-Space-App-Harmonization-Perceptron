@@ -8,8 +8,9 @@ Perceptron
 
 ## Links
 - **GitHub Repository:** https://github.com/azmaeenmahtab/Nasa-Space-App-Harmonization-Perceptron
-- **240s Demo Video:** https://youtu.be/O7Fo4-lNndQ?si=PZ3GMXMkyO8Hx_7Q
-- **Live Demo URL:** *(Paste deployed Render/Vercel URL here once live)*
+- **Live Demo URL:** https://nasa-space-app-harmonization-percep.vercel.app/
+- **30s Global Judging Video:** https://youtu.be/je6PrhJea90?si=HG-OxZJyug_-QG_K
+- **240s Full Demo Video:** https://youtu.be/O7Fo4-lNndQ?si=R6r0HaAsskfusfGY
 - **Pitch Deck / Slides:** *(Paste link or attach PDF here)*
 
 ---
